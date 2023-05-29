@@ -35,7 +35,7 @@ export default function App() {
         name="TextField"
         control={control}
         rules={{
-          required: true,
+          required: 'Поле обязательно к заполнению',
         }}
         render={({ field, fieldState }) => <>
           <input
@@ -55,8 +55,11 @@ export default function App() {
         name="NumberField"
         control={control}
         rules={{
-          required: true,
-          pattern: /\d{4}$/,
+          required: 'Поле обязательно к заполнению',
+          pattern: {
+            value: /\d{4}$/,
+            message: 'Только цифры'
+          }
         }}
         render={({ field, fieldState }) => <>
           <input
