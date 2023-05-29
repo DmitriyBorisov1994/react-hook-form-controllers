@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 24px;
+}
+.submitBtn {
+  background-color: white;
+  border: 1px solid darkcyan;
+  color: darkcyan;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.submitBtn:hover {
+  background-color: rgb(234, 233, 233);
+}
+.err {
+  color: red;
+}
